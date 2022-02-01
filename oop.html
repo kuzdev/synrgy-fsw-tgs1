@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP-Function-case</title>
+</head>
+<body>
+
+/*
+    1. Array : [ 2, 5, 10, 'ini dia', 'data', 100 , 38 ]
+    jika panjang array kurang dari 50, looping array
+    else print boolean
+
+    2. Array : [ 3, 100, 283, 'saya', 'adalah', 'kapiten', 75 ]
+    jika b + ( panjang array ) bukan 32, looping array
+    else print boolean
+
+    3. Array: [ 29, 12, 30, 'ini', 'saya', 85 ]
+    jika ( panjang array ) + a = 28, looping array
+    else print boolean
+
+    4. Array: [ 20, 12, 43, 54, 24 ]
+    jika panjang array + 1 bukan 35, looping array
+    else print boolean
+
+    5. Array: [ 20, 'empat', 'limat', 8, 29, 30 ]
+    jika x + ( panjang array ) bukan 35, looping array
+    else print boolean
+
+    6.  Array: [ 'data', 'empat', 8 , 3, 100, 8, 100, 3  ]
+    jika c + ( panjang array ) + a bukan 25, looping array
+    else print boolean
+*/
+
+</body>
+<script>
+
+//1
+var ArrayString1 = [2, 5, 10, "ini dia", "data", 100, 38];
+function getArray(ArrayString1) {
+  var arrayLength = ArrayString1.length;
+  i = 50;
+  if (arrayLength < i) {
+    for (var i = 0; i < arrayLength; i++) {
+      console.log(ArrayString1[i]);
+    }
+  } else {
+    console.log(false);
+  }
+}
+getArray(ArrayString1);
+
+//2
+var ArrayString2 = [3, 100, 283, "saya", "adalah", "kapiten", 75];
+function getArray2(ArrayString2) {
+  var arrayLength = ArrayString2.length;
+  b = 26;
+  if (arrayLength + b != 32) {
+    for (var i = 0; i < arrayLength; i++) {
+      console.log(ArrayString2[i]);
+    }
+  } else {
+    console.log(false);
+  }
+}
+getArray2(ArrayString2);
+
+//3
+var ArrayString3 = [29, 12, 30, "ini", "saya", 85];
+function getArray3(ArrayString3) {
+  var arrayLength = ArrayString3.length;
+  a = 22;
+  if (arrayLength + a == 28) {
+    for (var i = 0; i < arrayLength; i++) {
+      console.log(ArrayString3[i]);
+    }
+  } else {
+    console.log(false);
+  }
+}
+getArray3(ArrayString3);
+
+//4
+var ArrayString4 = [20, 12, 43, 54, 24];
+function getArray4(ArrayString4) {
+  var arrayLength = ArrayString4.length;
+  if (arrayLength + 1 != 35) {
+    for (var i = 0; i < arrayLength; i++) {
+      console.log(ArrayString4[i]);
+    }
+  } else {
+    console.log(false);
+  }
+}
+getArray4(ArrayString4);
+
+//5
+
+var ArrayString5 = [20, "empat", "limat", 8, 29, 30];
+function getArray5(ArrayString5) {
+  var arrayLength = ArrayString5.length;
+  x = 2;
+  if (arrayLength + x != 35) {
+    for (var i = 0; i < arrayLength; i++) {
+      console.log(ArrayString5[i]);
+    }
+  } else {
+    console.log(false);
+  }
+}
+getArray5(ArrayString5);
+
+//6
+
+var ArrayString6 = ["data", "empat", 8, 3, 100, 8, 100, 3];
+function getArray6(ArrayString6) {
+  var arrayLength = ArrayString6.length;
+  c = 10;
+  if (arrayLength + c != 25) {
+    for (var i = 0; i < arrayLength; i++) {
+      console.log(ArrayString6[i]);
+    }
+  } else {
+    console.log(false);
+  }
+}
+getArray6(ArrayString6);
+
+
+</script>
+</html>
